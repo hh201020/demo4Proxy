@@ -32,7 +32,7 @@ public class Demo2Application {
 	public Map<String, Object> home() {
 		Map<String, Object> model = new HashMap<String, Object>();
 		model.put("id", UUID.randomUUID().toString());
-		model.put("content", "Hello Worldooo");
+		model.put("content", "Hello Worrrildooo");
 		return model;
 	}
 
