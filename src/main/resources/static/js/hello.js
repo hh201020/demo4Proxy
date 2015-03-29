@@ -64,15 +64,9 @@ angular
 						});
 					}
 				}).controller('home', function($scope, $http) {
-			$http.get('token').success(function(token) {
-				$http({
-					url : 'https://localhost:9000',
-					method : 'GET',
-					headers : {
-						'X-Auth-Token' : token.token
-					}
-				}).success(function(data) {
-					$scope.greeting = data;
+					$http.get('resource/').success(function(data) {
+						$scope.greeting = data;
+					})
 				});
 			})
 		});
